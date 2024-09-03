@@ -3,7 +3,12 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 
 const Home = () => {
   const now = new Date();
-  const time = now.toLocaleTimeString('en-PK',{hour: '2-digit',minute: '2-digit'}).toUpperCase()
+  const time = now.toLocaleTimeString('en-PK', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+    timeZone: 'Asia/Karachi' // Set the time zone explicitly
+  }).toUpperCase();
   const date = (new Intl.DateTimeFormat('en-PK', {dateStyle:'full'})).format(now);
   return (
     <section className='flex size-full flex-col gap-10 text-white'>

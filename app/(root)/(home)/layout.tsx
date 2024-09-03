@@ -5,10 +5,10 @@ import React, { Children, ReactNode } from 'react'
 
 
 export const metadata: Metadata = {
-  title: "Yoom",
+  title: "HRIS",
   description: "Video calling app",
   icons:{
-    icon: '/icons/logo.svg'
+    icon: '/icons/nha_logo.png'
   }
 };
 
