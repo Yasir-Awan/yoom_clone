@@ -88,6 +88,33 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  /* Style for WebKit browsers */
+  .sidebar-content {
+    /* Custom scrollbar */
+    overflow-y: auto;
+  }
+
+  /* Track */
+  .sidebar-content::-webkit-scrollbar {
+    width: 8px; /* Thinner scrollbar */
+  }
+
+  /* Handle */
+  .sidebar-content::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Roundness of the scrollbar handle */
+  }
+
+  /* Handle on hover */
+  .sidebar-content::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+  }
+
+  /* Track (optional) */
+  .sidebar-content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+
 }
 
 /* animation */

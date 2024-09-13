@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { Toaster } from "@/components/ui/toaster";
+import { ClerkProvider } from '@clerk/nextjs';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { Toaster } from '@/components/ui/toaster';
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import 'react-datepicker/dist/react-datepicker.css';
+import UserStorage from '@/components/UserStorage';
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "HRIS",
   description: "Video calling app",
   icons: {
@@ -38,6 +38,7 @@ export default function RootLayout({
         }}
       >
         <body className={`${inter.className} bg-dark-2`}>
+          <UserStorage/>
           {children}
           <Toaster />
         </body>

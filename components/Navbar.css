@@ -1,0 +1,11 @@
+/* Hide the default sign-out button */
+.cl-button__signOut {
+    display: none;
+  }
+  .cl-button__custom-menutItem-1 {
+    color: white; /* Text color for sign-out button */
+  }
+
+  .cl-userButtonPopoverActionItemButtonIcon svg {
+    fill: white; /* Make sure the icon is white as well */
+  }
