@@ -15,7 +15,7 @@ function UserStorage() {
         const loginFormData = { username: email };
 
         try {
-          const response = await fetch('https://ettm.nha.gov.pk/hris_cn/login', {
+          const response = await fetch('http://localhost/hris_cn/login', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

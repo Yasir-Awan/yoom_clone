@@ -23,7 +23,7 @@ const Schedules = () => {
   const [filterModel, setFilterModel] = useState({ items: [{ columnField: '', operatorValue: '', value: '' }] });
 
   const fetchShiftList = async () => {
-    const response = await fetch('https://ettm.nha.gov.pk/hris_cn/shift_list', {
+    const response = await fetch('http://localhost/hris_cn/shift_list', {
       method: 'GET',
       headers: { Authorization: 'Bearer ' + localStorage.getItem('token') },
     });
@@ -41,7 +41,7 @@ const Schedules = () => {
       employees: parseEmployees(),
     };
 
-    const response = await fetch('https://ettm.nha.gov.pk/hris_cn/schedule_list', {
+    const response = await fetch('http://localhost/hris_cn/schedule_list', {
       method: 'POST',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),
