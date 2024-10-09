@@ -41,7 +41,7 @@ const Schedules = () => {
       employees: parseEmployees(),
     };
 
-    const response = await fetch('http://localhost/hris_cn/schedule_list', {
+    const response = await fetch('https://ettm.nha.gov.pk/hris_cn/schedule_list', {
       method: 'POST',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),

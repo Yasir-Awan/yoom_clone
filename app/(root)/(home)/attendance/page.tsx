@@ -33,7 +33,7 @@ const Attendance = () => {
       employees: parseEmployees(),
     };
 
-    const response = await fetch('http://localhost/hris_cn/attendance_list', {  // Adapted endpoint
+    const response = await fetch('https://ettm.nha.gov.pk/hris_cn/attendance_list', {  // Adapted endpoint
       method: 'POST',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),

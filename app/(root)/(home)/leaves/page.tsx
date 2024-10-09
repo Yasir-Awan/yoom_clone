@@ -33,7 +33,7 @@ const Leaves = () => {
       employees: parseEmployees(),
     };
 
-    const response = await fetch('http://localhost/hris_cn/leaves_list', {  // Adapted endpoint
+    const response = await fetch('https://ettm.nha.gov.pk/hris_cn/leaves_list', {  // Adapted endpoint
       method: 'POST',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'),
